@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">itcc41-final-about-me-app</string>
+    <string name="almonte_kate">Almonte, Kate | Click For More</string>
+    <string name="expert_sleeper_toron_enthusiast_volleyball_and_darts_player_nature_photographer">Expert Sleeper | Toron Enthusiast | Volleyball and Darts Player | Nature Photographer</string>
+    <string name="see_github_account">See Github Account</string>
+    <string name="asuelo_ydrick">Ydrick Asuelo | Click For More</string>
+    <string name="desc_ydrick">This is a short description about Ydrick</string>
+    <string name="image_of_kate_almonte">Image of Kate Almonte</string>
+    <string name="bacalso_sai">Sai Bacalso | Click For More</string>
+    <string name="desc_sai">This is a short description about Sai</string>
+    <string name="ydrick_image">Image of Ydrick Asuelo</string>
+    <string name="bacalso_sai_image">Image of Sai Bacalso</string>
+    <string name="desc_ethan">This is a short description about Ethan</string>
+    <string name="image_of_ethan_dosdos">Image of Ethan Dosdos</string>
+    <string name="ethan_dosdos_click_for_more">Ethan Dosdos | Click For More</string>
+    <string name="desc_sandy">Working Hours: 24/7 | Pocari-Magic Believer | Long-Pips Player 🏓</string>
+    <string name="sandy_lumacad_click_for_more">Sandy Lumacad | Click For More</string>
+</resources>

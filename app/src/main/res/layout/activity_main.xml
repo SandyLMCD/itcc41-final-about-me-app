@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Card 1: Kate Almonte -->
+        <LinearLayout
+            android:id="@+id/card_kate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/card_background"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <ImageView
+                android:id="@+id/image_kate"
+                android:layout_width="match_parent"
+                android:layout_height="198dp"
+                android:src="@drawable/kate_img"
+                android:contentDescription="@string/image_of_kate_almonte"/>
+
+            <TextView
+                android:id="@+id/name_kate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="8dp"
+                android:text="@string/almonte_kate"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/desc_kate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="8dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/expert_sleeper_toron_enthusiast_volleyball_and_darts_player_nature_photographer" />
+
+                <Button
+                    android:id="@+id/btn_kate_gthb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/see_github_account" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Card 2: Ydrick Asuelo -->
+        <LinearLayout
+            android:id="@+id/card_ydrick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/card_background"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <ImageView
+                android:id="@+id/image_ydrick"
+                android:layout_width="match_parent"
+                android:layout_height="198dp"
+                android:src="@drawable/ydrick"
+                android:contentDescription="@string/ydrick_image"/>
+
+            <TextView
+                android:id="@+id/name_ydrick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:elegantTextHeight="false"
+                android:focusable="true"
+                android:padding="8dp"
+                android:text="@string/asuelo_ydrick"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/desc_ydrick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="8dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/desc_ydrick" />
+
+                <Button
+                    android:id="@+id/btn_ydrick_gthb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/see_github_account" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Sai Bacalso -->
+        <LinearLayout
+            android:id="@+id/card_sai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/card_background"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <ImageView
+                android:id="@+id/image_sai"
+                android:layout_width="match_parent"
+                android:layout_height="198dp"
+                android:contentDescription="@string/bacalso_sai_image"
+                android:src="@drawable/sai" />
+
+            <TextView
+                android:id="@+id/name_sai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="8dp"
+                android:text="@string/bacalso_sai"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/desc_sai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="8dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/desc_sai" />
+
+                <Button
+                    android:id="@+id/btn_3_gthb_sai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/see_github_account" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Ethan Dosdos -->
+        <LinearLayout
+            android:id="@+id/card_ethan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/card_background"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <ImageView
+                android:id="@+id/image_ethan"
+                android:layout_width="match_parent"
+                android:layout_height="198dp"
+                android:src="@drawable/ethan"
+                android:contentDescription="@string/image_of_ethan_dosdos"/>
+
+            <TextView
+                android:id="@+id/name_ethan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="8dp"
+                android:text="@string/ethan_dosdos_click_for_more"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/desc_ethan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="8dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/desc_ethan" />
+
+                <Button
+                    android:id="@+id/btn_4_gthb_ethan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/see_github_account" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Sandy -->
+        <LinearLayout
+            android:id="@+id/card_sandy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/card_background"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <ImageView
+                android:id="@+id/image_sandy"
+                android:layout_width="match_parent"
+                android:layout_height="198dp"
+                android:src="@drawable/profile" />
+
+            <TextView
+                android:id="@+id/name_5_sandy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="8dp"
+                android:text="@string/sandy_lumacad_click_for_more"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/desc_sandy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="8dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/desc_sandy" />
+
+                <Button
+                    android:id="@+id/btn_5_gthb_sandy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/see_github_account" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
