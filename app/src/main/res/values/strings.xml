@@ -1,18 +1,38 @@
 <resources>
-    <string name="app_name">itcc41-final-about-me-app</string>
-    <string name="almonte_kate">Almonte, Kate | Click For More</string>
+    <string name="app_name">itcc41_final_about_me_app</string>
+    <string name="app_title">ITCC 41 - About me</string>
+
+    <string name="text_know_more">Know More</string>
+    <string name="content_description_photo">Photo of profile user</string>
+
+    <string name="kate_name">Almonte, Kate</string>
+    <string name="kate_info">Expert Sleeper | Toron Enthusiast | Volleyball &amp; Darts Player | Nature Photographer</string>
+    <string name="kate_description">Kate is an excellent team player, bringing positive energy and meticulous attention to detail to every project. Her passion for nature photography and volleyball reflects her disciplined and creative approach to life and work.</string>
+    <string name="almonte_kate_name_old">Almonte, Kate | Click For More</string>
     <string name="expert_sleeper_toron_enthusiast_volleyball_and_darts_player_nature_photographer">Expert Sleeper | Toron Enthusiast | Volleyball and Darts Player | Nature Photographer</string>
-    <string name="see_github_account">See Github Account</string>
-    <string name="asuelo_ydrick">Ydrick Asuelo | Click For More</string>
-    <string name="desc_ydrick">This is a short description about Ydrick</string>
-    <string name="image_of_kate_almonte">Image of Kate Almonte</string>
-    <string name="bacalso_sai">Sai Bacalso | Click For More</string>
-    <string name="desc_sai">This is a short description about Sai</string>
-    <string name="ydrick_image">Image of Ydrick Asuelo</string>
-    <string name="bacalso_sai_image">Image of Sai Bacalso</string>
-    <string name="desc_ethan">This is a short description about Ethan</string>
-    <string name="image_of_ethan_dosdos">Image of Ethan Dosdos</string>
-    <string name="ethan_dosdos_click_for_more">Ethan Dosdos | Click For More</string>
-    <string name="desc_sandy">Working Hours: 24/7 | Pocari-Magic Believer | Long-Pips Player 🏓</string>
-    <string name="sandy_lumacad_click_for_more">Sandy Lumacad | Click For More</string>
+
+    <string name="ydrick_name">Asuelo, Ydrick</string>
+    <string name="ydrick_info">Creative Developer | Loves UI/UX | Coding Enthusiast</string>
+    <string name="ydrick_description">Ydrick specializes in creating intuitive and beautiful user interfaces. He constantly researches new design trends and frameworks, ensuring his projects are always modern, accessible, and highly user-centric.</string>
+    <string name="asuelo_ydrick_name_old">Ydrick Asuelo | Click For More</string>
+    <string name="ydrick_description_old">This is a short description about Ydrick</string>
+
+    <string name="sai_name">Bacalso, Sai</string>
+    <string name="sai_info">Tech Explorer | Gamer | Aspiring Mobile Developer</string>
+    <string name="sai_description">Sai is a dedicated tech explorer with a strong foundation in programming logic. When not coding, you can find Sai diving deep into strategic games, a hobby that translates directly into effective problem-solving skills in development.</string>
+    <string name="bacalso_sai_name_old">Sai Bacalso | Click For More</string>
+    <string name="sai_description_old">This is a short description about Sai</string>
+
+    <string name="ethan_name">Dosdos, Ethan</string>
+    <string name="ethan_info">Calm Coder | Chess Player | Always Learning</string>
+    <string name="ethan_description">Ethan approaches complex challenges with a calm and methodical perspective, much like a chess grandmaster. His commitment to continuous learning ensures he masters new technologies quickly and reliably.</string>
+    <string name="ethan_dosdos_name_old">Ethan Dosdos | Click For More</string>
+    <string name="ethan_description_old">This is a short description about Ethan</string>
+
+    <string name="sandy_name">Lumacad, Sandy</string>
+    <string name="sandy_info">Working Hours: 24/7 | Pocari-Magic Enthusiast | Long-Pips Player</string>
+    <string name="sandy_description">Sandy is known for her tireless work ethic and unique perspective, often finding innovative solutions where others stop. Her passion for table tennis and dedication to the team make her an invaluable project member.</string>
+    <string name="sandy_lumacad_name_old">Sandy Lumacad | Click For More</string>
+    <string name="sandy_info_old">Working Hours: 24/7 | Pocari-Magic Believer | Long-Pips Player 🏓</string>
+
 </resources>
