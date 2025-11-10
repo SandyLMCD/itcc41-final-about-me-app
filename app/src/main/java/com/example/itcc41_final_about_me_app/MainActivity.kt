@@ -77,7 +77,7 @@ class MainActivity : ComponentActivity() {
 
         // Setting the button click functionality to open Github page
         btnKate.setOnClickListener {
-            val url = "https://github.com/kateAlmonte" // Replace with actual URL
+            val url = "https://github.com/kateAlmonte" // Replace with actual URL hihi
             val intent = Intent(Intent.ACTION_VIEW)
             intent.data = Uri.parse(url)
             startActivity(intent)
