@@ -133,7 +133,7 @@ class MainActivity : ComponentActivity() {
         }
 
         btnEthan.setOnClickListener {
-            val url = "https://ethangithub.com" // Replace with actual URL
+            val url = "https://github.com/EthanDale26" // Replace with actual URL
             val intent = Intent(Intent.ACTION_VIEW)
             intent.data = Uri.parse(url)
             startActivity(intent)
