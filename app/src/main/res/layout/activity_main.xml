@@ -1,273 +1,366 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/scroll_root"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="match_parent"
+    android:background="#F7F7FA"
+    tools:context=".MainActivity">
 
-    <LinearLayout
-        android:id="@+id/container"
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="16dp">
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:fillViewport="true">
 
-        <!-- Card 1: Kate Almonte -->
         <LinearLayout
-            android:id="@+id/card_kate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:background="@drawable/card_background"
             android:orientation="vertical"
-            android:padding="12dp">
-
-            <ImageView
-                android:id="@+id/image_kate"
-                android:layout_width="match_parent"
-                android:layout_height="198dp"
-                android:src="@drawable/kate_img"
-                android:contentDescription="@string/image_of_kate_almonte"/>
-
-            <TextView
-                android:id="@+id/name_kate"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:clickable="true"
-                android:focusable="true"
-                android:padding="8dp"
-                android:text="@string/almonte_kate"
-                android:textAlignment="center"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+            android:dividerPadding="8dp">
 
             <LinearLayout
-                android:id="@+id/desc_kate"
+                android:id="@+id/card_kate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
                 android:orientation="vertical"
-                android:paddingTop="8dp"
-                android:visibility="gone">
+                android:background="@android:color/white"
+                android:elevation="2dp"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/image_kate"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/kate_img"
+                    android:contentDescription="@string/content_description_photo" />
 
                 <TextView
+                    android:id="@+id/name_kate"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/expert_sleeper_toron_enthusiast_volleyball_and_darts_player_nature_photographer" />
+                    android:text="@string/kate_name"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_marginTop="8dp" />
 
-                <Button
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kate_info"
+                    android:textSize="14sp"
+                    android:textColor="#444"
+                    android:layout_marginTop="4dp" />
+
+                <LinearLayout
+                    android:id="@+id/desc_kate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:padding="0dp"
+                    android:layout_marginTop="8dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/kate_description" android:textSize="14sp"
+                        android:textColor="#333"/>
+                </LinearLayout>
+
+                <TextView
                     android:id="@+id/btn_kate_gthb"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="@string/text_know_more"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#3F51B5"
                     android:layout_marginTop="8dp"
-                    android:text="@string/see_github_account" />
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="4dp" />
             </LinearLayout>
-        </LinearLayout>
-
-        <!-- Card 2: Ydrick Asuelo -->
-        <LinearLayout
-            android:id="@+id/card_ydrick"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:background="@drawable/card_background"
-            android:orientation="vertical"
-            android:padding="12dp">
-
-            <ImageView
-                android:id="@+id/image_ydrick"
-                android:layout_width="match_parent"
-                android:layout_height="198dp"
-                android:src="@drawable/ydrick"
-                android:contentDescription="@string/ydrick_image"/>
-
-            <TextView
-                android:id="@+id/name_ydrick"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:clickable="true"
-                android:elegantTextHeight="false"
-                android:focusable="true"
-                android:padding="8dp"
-                android:text="@string/asuelo_ydrick"
-                android:textSize="18sp"
-                android:textStyle="bold" />
 
             <LinearLayout
-                android:id="@+id/desc_ydrick"
+                android:id="@+id/card_ydrick"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
                 android:orientation="vertical"
-                android:paddingTop="8dp"
-                android:visibility="gone">
+                android:background="@android:color/white"
+                android:elevation="2dp"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/image_ydrick"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ydrick"
+                    android:contentDescription="@string/content_description_photo" />
 
                 <TextView
+                    android:id="@+id/name_ydrick"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/desc_ydrick" />
+                    android:text="@string/ydrick_name"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_marginTop="8dp" />
 
-                <Button
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ydrick_info"
+                    android:textSize="14sp"
+                    android:textColor="#444"
+                    android:layout_marginTop="4dp" />
+
+                <LinearLayout
+                    android:id="@+id/desc_ydrick"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:padding="0dp"
+                    android:layout_marginTop="8dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ydrick_description" android:textSize="14sp"
+                        android:textColor="#333"/>
+                </LinearLayout>
+
+                <TextView
                     android:id="@+id/btn_ydrick_gthb"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="@string/text_know_more"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#3F51B5"
                     android:layout_marginTop="8dp"
-                    android:text="@string/see_github_account" />
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="4dp" />
             </LinearLayout>
-        </LinearLayout>
-
-        <!-- Sai Bacalso -->
-        <LinearLayout
-            android:id="@+id/card_sai"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:background="@drawable/card_background"
-            android:orientation="vertical"
-            android:padding="12dp">
-
-            <ImageView
-                android:id="@+id/image_sai"
-                android:layout_width="match_parent"
-                android:layout_height="198dp"
-                android:contentDescription="@string/bacalso_sai_image"
-                android:src="@drawable/sai" />
-
-            <TextView
-                android:id="@+id/name_sai"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:clickable="true"
-                android:focusable="true"
-                android:padding="8dp"
-                android:text="@string/bacalso_sai"
-                android:textSize="18sp"
-                android:textStyle="bold" />
 
             <LinearLayout
-                android:id="@+id/desc_sai"
+                android:id="@+id/card_sai"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
                 android:orientation="vertical"
-                android:paddingTop="8dp"
-                android:visibility="gone">
+                android:background="@android:color/white"
+                android:elevation="2dp"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/image_sai"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sai"
+                    android:contentDescription="@string/content_description_photo" />
 
                 <TextView
+                    android:id="@+id/name_sai"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/desc_sai" />
+                    android:text="@string/sai_name"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_marginTop="8dp" />
 
-                <Button
+                <TextView
+                    android:id="@+id/sai_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sai_info"
+                    android:textSize="14sp"
+                    android:textColor="#444"
+                    android:layout_marginTop="4dp" />
+
+                <LinearLayout
+                    android:id="@+id/desc_sai"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:padding="0dp"
+                    android:layout_marginTop="8dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sai_description" android:textSize="14sp"
+                        android:textColor="#333"/>
+                </LinearLayout>
+
+                <TextView
                     android:id="@+id/btn_3_gthb_sai"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="@string/text_know_more"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#3F51B5"
                     android:layout_marginTop="8dp"
-                    android:text="@string/see_github_account" />
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="4dp" />
             </LinearLayout>
-        </LinearLayout>
-
-        <!-- Ethan Dosdos -->
-        <LinearLayout
-            android:id="@+id/card_ethan"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:background="@drawable/card_background"
-            android:orientation="vertical"
-            android:padding="12dp">
-
-            <ImageView
-                android:id="@+id/image_ethan"
-                android:layout_width="match_parent"
-                android:layout_height="198dp"
-                android:src="@drawable/ethan"
-                android:contentDescription="@string/image_of_ethan_dosdos"/>
-
-            <TextView
-                android:id="@+id/name_ethan"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:clickable="true"
-                android:focusable="true"
-                android:padding="8dp"
-                android:text="@string/ethan_dosdos_click_for_more"
-                android:textSize="18sp"
-                android:textStyle="bold" />
 
             <LinearLayout
-                android:id="@+id/desc_ethan"
+                android:id="@+id/card_ethan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
                 android:orientation="vertical"
-                android:paddingTop="8dp"
-                android:visibility="gone">
+                android:background="@android:color/white"
+                android:elevation="2dp"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/image_ethan"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ethan"
+                    android:contentDescription="@string/content_description_photo" />
 
                 <TextView
+                    android:id="@+id/name_ethan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/desc_ethan" />
+                    android:text="@string/ethan_name"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_marginTop="8dp" />
 
-                <Button
+                <TextView
+                    android:id="@+id/ethan_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ethan_info"
+                    android:textSize="14sp"
+                    android:textColor="#444"
+                    android:layout_marginTop="4dp" />
+
+                <LinearLayout
+                    android:id="@+id/desc_ethan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:padding="0dp"
+                    android:layout_marginTop="8dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ethan_description" android:textSize="14sp"
+                        android:textColor="#333"/>
+                </LinearLayout>
+
+                <TextView
                     android:id="@+id/btn_4_gthb_ethan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="@string/text_know_more"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#3F51B5"
                     android:layout_marginTop="8dp"
-                    android:text="@string/see_github_account" />
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="4dp" />
             </LinearLayout>
-        </LinearLayout>
-
-        <!-- Sandy -->
-        <LinearLayout
-            android:id="@+id/card_sandy"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:background="@drawable/card_background"
-            android:orientation="vertical"
-            android:padding="12dp">
-
-            <ImageView
-                android:id="@+id/image_sandy"
-                android:layout_width="match_parent"
-                android:layout_height="198dp"
-                android:src="@drawable/profile" />
-
-            <TextView
-                android:id="@+id/name_5_sandy"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:clickable="true"
-                android:focusable="true"
-                android:padding="8dp"
-                android:text="@string/sandy_lumacad_click_for_more"
-                android:textSize="18sp"
-                android:textStyle="bold" />
 
             <LinearLayout
-                android:id="@+id/desc_sandy"
+                android:id="@+id/card_sandy"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
                 android:orientation="vertical"
-                android:paddingTop="8dp"
-                android:visibility="gone">
+                android:background="@android:color/white"
+                android:elevation="2dp"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/image_sandy"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/profile"
+                    android:contentDescription="@string/content_description_photo" />
 
                 <TextView
+                    android:id="@+id/name_5_sandy"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/desc_sandy" />
+                    android:text="@string/sandy_name"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_marginTop="8dp" />
 
-                <Button
+                <TextView
+                    android:id="@+id/sandy_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sandy_info"
+                    android:textSize="14sp"
+                    android:textColor="#444"
+                    android:layout_marginTop="4dp" />
+
+                <LinearLayout
+                    android:id="@+id/desc_sandy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:padding="0dp"
+                    android:layout_marginTop="8dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sandy_description" android:textSize="14sp"
+                        android:textColor="#333"/>
+                </LinearLayout>
+
+                <TextView
                     android:id="@+id/btn_5_gthb_sandy"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="@string/text_know_more"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#3F51B5"
                     android:layout_marginTop="8dp"
-                    android:text="@string/see_github_account" />
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="4dp" />
             </LinearLayout>
-        </LinearLayout>
 
-    </LinearLayout>
-</ScrollView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
