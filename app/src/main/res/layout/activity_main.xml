@@ -69,7 +69,7 @@
                         android:textColor="#333"/>
                 </LinearLayout>
 
-                <TextView
+                <Button
                     android:id="@+id/btn_kate_gthb"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -137,7 +137,7 @@
                         android:textColor="#333"/>
                 </LinearLayout>
 
-                <TextView
+                <Button
                     android:id="@+id/btn_ydrick_gthb"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -206,7 +206,7 @@
                         android:textColor="#333"/>
                 </LinearLayout>
 
-                <TextView
+                <Button
                     android:id="@+id/btn_3_gthb_sai"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -275,7 +275,7 @@
                         android:textColor="#333"/>
                 </LinearLayout>
 
-                <TextView
+                <Button
                     android:id="@+id/btn_4_gthb_ethan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -344,7 +344,7 @@
                         android:textColor="#333"/>
                 </LinearLayout>
 
-                <TextView
+                <Button
                     android:id="@+id/btn_5_gthb_sandy"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
